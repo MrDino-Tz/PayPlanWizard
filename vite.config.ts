@@ -8,6 +8,7 @@ export default defineConfig(({ command, mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    allowedHosts: ["payplanwizard.onrender.com", "localhost", "127.0.0.1", "0.0.0.0"],
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
@@ -15,5 +16,5 @@ export default defineConfig(({ command, mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: command === 'build' ? '/PayPlanWizard/' : '/',
+  base: '/PayPlanWizard/',
 }));
