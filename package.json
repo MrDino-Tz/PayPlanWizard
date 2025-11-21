@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://sadick3660.github.io/PayPlanWizard.git",
+  "homepage": "https://tanzania-open-source-tos.github.io/PayPlanWizard/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
